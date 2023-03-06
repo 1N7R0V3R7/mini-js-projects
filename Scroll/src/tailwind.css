@@ -1,0 +1,14 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@layer components {
+    .navigationItem {
+        @apply text-darkBlue hover:text-lightBlue duration-500 tracking-widest text-[1.3rem] pl-6 py-2;
+    }
+    .content {
+        @apply h-screen text-center uppercase text-darkBlue tracking-widest font-bold text-[2rem];
+    }
+    .navigationItemDesktop {
+        @apply text-white text-[1.3rem] pr-8;
+    }
+}

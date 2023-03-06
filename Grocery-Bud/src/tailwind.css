@@ -1,0 +1,11 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@layer components {
+    .create-update {
+        @apply text-green-700 bg-green-200;
+    }
+    .delete {
+        @apply text-red-700 bg-red-200;
+    }
+}

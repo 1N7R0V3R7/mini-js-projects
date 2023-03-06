@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sidebar</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" />
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="bg-backgroundWhite">
+    <div class="hidden"></div>
+    <button class="absolute right-4 top-4 animate-growShrink" onclick="renderSidebar()" id="hamburgerButton">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-coreBlue" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M4 6h16M4 12h16M4 18h16" />
+        </svg>
+    </button>
+    <nav class="bg-white h-screen -translate-x-full transition duration-300 sm:w-[400px] flex flex-col justify-between">
+        <div class="">
+            <div class="p-4 flex justify-between items-center">
+                <div class="">
+                    <img src="logo.svg" alt="Logo" class="w-48">
+                </div>
+                <button onclick="renderSidebar()">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-7 w-7 text-crossRed hover:rotate-[540deg] duration-300" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="4" d="M6 18L18 6M6 6l12 12" />
+                    </svg>
+                </button>
+            </div>
+            <ul class="mt-4">
+                <li class="sidebarLinksMobile">
+                    <a href="" class="">
+                        Home
+                    </a>
+                </li>
+                <li class="sidebarLinksMobile">
+                    <a href="" class="">
+                        About
+                    </a>
+                </li>
+                <li class="sidebarLinksMobile">
+                    <a href="" class="">
+                        Projects
+                    </a>
+                </li>
+                <li class="sidebarLinksMobile">
+                    <a href="" class="">
+                        Contact
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <ul class="flex items-center justify-center mb-8">
+            <li class="sidebarIcons">
+                <a href="https://www.twitter.com">
+                    <i class="fab fa-facebook fa-lg"></i>
+                </a>
+            </li>
+            <li class="sidebarIcons">
+                <a href="https://www.twitter.com">
+                    <i class="fab fa-twitter fa-lg"></i>
+                </a>
+            </li>
+            <li class="sidebarIcons">
+                <a href="https://www.twitter.com">
+                    <i class="fab fa-behance fa-lg"></i>
+                </a>
+            </li>
+            <li class="sidebarIcons">
+                <a href="https://www.twitter.com">
+                    <i class="fab fa-linkedin fa-lg"></i>
+                </a>
+            </li>
+            <li class="sidebarIcons">
+                <a href="https://www.twitter.com">
+                    <i class="fab fa-sketch fa-lg"></i>
+                </a>
+            </li>
+        </ul>
+    </nav>
+    <script src="script.js"></script>
+</body>
+</html>

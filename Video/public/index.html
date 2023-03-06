@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="h-screen flex justify-center items-center" id="preloader">
+        <img src="../preloader.gif" alt="Preloader GIF">
+    </div>
+    <video autoplay muted loop class="fixed min-w-full min-h-full top-0 left-0 object-cover hidden">
+        <source src="../video.mp4" type="video/mp4">
+    </video>
+    <div class="absolute h-screen w-screen flex justify-center items-center bg-black bg-opacity-50 hidden">
+        <p class="text-white font-bold text-[3rem] lg:text-[5rem] lg text-center opacity-100">Video Project</p>
+        <button class="absolute bottom-8 left-8 bg-white text-sky-500 rounded-lg text-[0.9rem] grid grid-cols-2" onclick="playPause()">
+            <div class="bg-sky-500 h-full w-1/2 absolute rounded-lg left-0 duration-500" id="video-button"></div>
+            <div class="px-4 py-2">Play</div>
+            <div class="px-4 py-2">Pause</div>
+        </button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

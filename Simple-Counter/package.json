@@ -1,0 +1,19 @@
+{
+  "name": "simple-counter",
+  "version": "1.0.0",
+  "description": "",
+  "main": "tailwind.config.js",
+  "dependencies": {
+    "autoprefixer": "^10.4.0",
+    "postcss": "^8.3.11",
+    "tailwindcss": "^2.2.19"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "build": "tailwindcss build src/tailwind.css -o public/styles.css",
+    "prod": "NODE_ENV=production npx tailwindcss ./src/tailwind.css -o ./public/styles.css"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}

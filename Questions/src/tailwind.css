@@ -1,0 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@layer components {
+    .accordionCard {
+        @apply bg-white shadow-xl p-6 my-4 rounded-md;
+    }
+    .accordionQuestion {
+        @apply capitalize text-textBlue tracking-[0.25em] flex justify-between items-center;
+    }
+    .accordionButton {
+        @apply text-golden outline outline-golden h-fit ml-2 hover:rotate-90 duration-500 ease-in-out;
+    }
+    .accordionText {
+        @apply text-sm text-blue-500 text-[0.8rem];
+    }
+    .accordionHR {
+        @apply text-[#CCCCCC] my-4;
+    }
+}

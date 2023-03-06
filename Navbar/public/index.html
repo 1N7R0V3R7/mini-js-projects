@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navbar</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" />
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="bg-backgroundWhite">
+    <nav class="bg-white p-4 grid grid-cols-4 relative z-10 md:flex md:justify-evenly md:shadow-xl">
+        <div class="col-span-3">
+            <img src="../logo.svg" alt="Logo" class="w-48">
+        </div>
+        <button class="justify-self-end active:text-logoBlue md:hidden" onclick="showNavigation()">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-7 w-7 text-coreBlue active:text-logoBlue hover:text-logoBlue hover:rotate-90 hover:duration-500 duration-500 md:hiddden" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M4 6h16M4 12h16M4 18h16" />
+            </svg>
+        </button>
+        <ul class="hidden md:visible md:flex md:flex-row md:items-center">
+            <li class="navigationLink">
+                <a href="" class="">
+                    Home
+                </a>
+            </li>
+            <li class="navigationLink">
+                <a href="" class="">
+                    About
+                </a>
+            </li>
+            <li class="navigationLink">
+                <a href="" class="">
+                    Projects
+                </a>
+            </li>
+            <li class="navigationLink">
+                <a href="" class="">
+                    Contact
+                </a>
+            </li>
+        </ul>
+        <ul class="hidden md:visible md:flex md:flex-row md:items-center">
+            <li class="navigationIcons">
+                <a href="https://www.twitter.com">
+                    <i class="fab fa-facebook"></i>
+                </a>
+            </li>
+            <li class="navigationIcons">
+                <a href="https://www.twitter.com">
+                    <i class="fab fa-twitter"></i>
+                </a>
+            </li>
+            <li class="navigationIcons">
+                <a href="https://www.twitter.com">
+                    <i class="fab fa-behance"></i>
+                </a>
+            </li>
+            <li class="navigationIcons">
+                <a href="https://www.twitter.com">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+            </li>
+            <li class="navigationIcons">
+                <a href="https://www.twitter.com">
+                    <i class="fab fa-sketch"></i>
+                </a>
+            </li>
+        </ul>
+    </nav>
+    <div class="bg-white z-0 shadow-xl transform -translate-y-full transition duration-500 ease-in-out md:hidden" id="navigation">
+        <ul class="">
+            <li class="navigationLinkMobile">
+                <a href="" class="">
+                    Home
+                </a>
+            </li>
+            <li class="navigationLinkMobile">
+                <a href="" class="">
+                    About
+                </a>
+            </li>
+            <li class="navigationLinkMobile">
+                <a href="" class="">
+                    Projects
+                </a>
+            </li>
+            <li class="navigationLinkMobile">
+                <a href="" class="">
+                    Contact
+                </a>
+            </li>
+        </ul>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

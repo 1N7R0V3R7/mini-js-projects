@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Questions</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="bg-backgroundWhite">
+    <div class="h-screen flex flex-col justify-center items-center">
+        <div class="text-golden font-greatVibes text-[2rem] tracking-widest font-bold">
+            General Questions
+        </div>
+        <div class="flex flex-col justify-evenly w-[90%] max-w-[641px] mt-8" id="accordion">
+
+            <div class="accordionCard" id="1">
+                <div class="accordionQuestion">
+                    <div class="">
+                        do you accept all major credit credit cards?
+                    </div>
+                    <button class="accordionButton" onclick="renderAccordion(event)" id="1">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" id="svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M12 6v6m0 0v6m0-6h6m-6 0H6" id="path" />
+                        </svg>
+                    </button>
+                    <button class="accordionButton hidden" onclick="renderAccordion(event)" id="1"> 
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M18 12H6" />
+                        </svg>
+                    </button>
+                </div>
+                <hr class="accordionHR hidden">
+                <div class="accordionText hidden">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. est dolore illo dolores quia nemo doloribus quaerat, magni numquam repellat reprehenderit.
+                </div>
+            </div>
+            <div class="accordionCard" id="2">
+                <div class="accordionQuestion">
+                    <div class="">
+                        do you support local farmers?
+                    </div>
+                    <button class="accordionButton" onclick="renderAccordion(event)" id="2">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" id="svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M12 6v6m0 0v6m0-6h6m-6 0H6" id="path" />
+                        </svg>
+                    </button>
+                    <button class="accordionButton hidden" onclick="renderAccordion(event)" id="2"> 
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M18 12H6" />
+                        </svg>
+                    </button>
+                </div>
+                <hr class="accordionHR hidden">
+                <div class="accordionText hidden">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. est dolore illo dolores quia nemo doloribus quaerat, magni numquam repellat reprehenderit.
+                </div>
+            </div>
+            <div class="accordionCard" id="3">
+                <div class="accordionQuestion">
+                    <div class="">
+                        do you use organic ingredients?
+                    </div>
+                    <button class="accordionButton" onclick="renderAccordion(event)" id="3">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" id="svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M12 6v6m0 0v6m0-6h6m-6 0H6" id="path" />
+                        </svg>
+                    </button>
+                    <button class="accordionButton hidden" onclick="renderAccordion(event)" id="3"> 
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M18 12H6" />
+                        </svg>
+                    </button>
+                </div>
+                <hr class="accordionHR hidden">
+                <div class="accordionText hidden">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. est dolore illo dolores quia nemo doloribus quaerat, magni numquam repellat reprehenderit.
+                </div>
+            </div>
+
+            
+            
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

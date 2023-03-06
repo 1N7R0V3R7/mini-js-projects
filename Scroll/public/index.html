@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scroll</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="bg-backgroundWhite">
+    <nav class="bg-white md:bg-transparent shadow-lg md:shadow-none md:absolute top-0 inset-x-0 z-20 transition duration-500 ease-in-out">
+        <div class="bg-white md:bg-transparent flex justify-between items-center relative py-3 px-6 z-10 md:max-w-7xl md:mx-auto">
+            <div class="">
+                <img src="./logo.svg" alt="Logo" class="h-[4rem] w-[4rem]">
+            </div>
+            <button class="hover:text-lightBlue md:hidden" onclick="mobileNavigationTrigger()">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-7 w-7" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M4 6h16M4 12h16M4 18h16" />
+                </svg>
+            </button>
+            <ul class="hidden md:flex">
+                <li class="navigationItemDesktop">
+                    <a name="hero-section" onclick="scrollEvent(event)">
+                        Home
+                    </a>
+                </li>
+                <li class="navigationItemDesktop">
+                    <a name="about-section" onclick="scrollEvent(event)">
+                        About
+                    </a>
+                </li>
+                <li class="navigationItemDesktop">
+                    <a name="services-section" onclick="scrollEvent(event)">
+                        Services
+                    </a>
+                </li>
+                <li class="navigationItemDesktop">
+                    <a name="tours-section" onclick="scrollEvent(event)">
+                        Tours
+                    </a>
+                </li>
+            </ul>    
+        </div>
+        <ul class="bg-white md:bg-transparent pb-4 -translate-y-full transition duration-500 ease-in-out absolute left-0 right-0 z-[9] md:hidden" id="mobile-dropdown-section">
+            <li class="navigationItem">
+                <a name="hero-section" onclick="scrollEvent(event)">
+                    Home
+                </a>
+            </li>
+            <li class="navigationItem">
+                <a name="about-section" onclick="scrollEvent(event)">
+                    About
+                </a>
+            </li>
+            <li class="navigationItem">
+                <a name="services-section" onclick="scrollEvent(event)">
+                    Services
+                </a>
+            </li>
+            <li class="navigationItem">
+                <a name="tours-section" onclick="scrollEvent(event)">
+                    Tours
+                </a>
+            </li>
+        </ul>
+    </nav>
+    <div class="text-white h-screen flex flex-col justify-center items-center" id="hero-section">
+        <div class="absolute bg-[#102a42] bg-opacity-50 h-screen w-screen z-[1]">
+        </div>
+        <p class="uppercase font-bold text-[3rem] md:text-[3.5rem] text-center tracking-wider px-4 z-[2]">
+            Scroll project
+        </p>
+        <p class="text-[0.9rem] md:text-[1rem] px-1 text-center my-4 z-[2] max-w-md">
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quas eos neque sunt in? Id, necessitatibus quos quisquam distinctio laudantium fugiat?
+        </p>
+        <a name="tours-section" onclick="scrollEvent(event)" class="uppercase tracking-[0.2rem] outline outline-white py-2 px-4 my-2 z-[2]">explore tours</a>
+    </div>
+    <div class="content" id="about-section">
+        <p class="">
+            About
+            <span class="text-lightBlue">Us</span>
+        </p>
+    </div>
+    <div class="content bg-white" id="services-section">
+        <p class="">
+            Our 
+            <span class="text-lightBlue">services</span>
+        </p>
+    </div>
+    <div class="content" id="tours-section">
+        <p class="">
+            Featured
+            <span class="text-lightBlue">tours</span>
+        </p>
+    </div>
+    <div class="bg-[#142643] text-white text-center capitalize py-[4rem] px-[2rem] tracking-widest ">
+        copyright © backroads travel tours company 2022. all rights reserved
+    </div>
+    <button class="bg-lightBlue p-2 rounded-lg fixed bottom-8 right-8 animate-growShrink z-10 hidden" onclick="goToTop()" id="top-button">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="4" d="M5 10l7-7m0 0l7 7m-7-7v18" />
+        </svg>
+    </button>
+    <div class="fixed text-darkBlue"></div>
+    <script src="script.js"></script>
+</body>
+</html>
+

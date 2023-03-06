@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabs</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="bg-backgroundWhite">
+
+    <div class="text-center my-12 mx-7 ">
+        <p class="text-darkBlue text-[2rem] font-bold  tracking-widest">
+            About
+        </p>
+        <p class="text-slate-600 text-[0.9rem] my-2">
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Earum, aperiam!
+        </p>
+    </div>
+    <div class="mx-4 flex flex-col gap-y-6 mb-32 lg:grid lg:grid-cols-2 lg:gap-x-8 lg:max-w-4xl lg:mx-auto">
+        <div class="">
+            <img src="./hero-bcg.jpeg" alt="Scenic Image" class="rounded-xl">
+        </div>
+        <div class="rounded-xl overflow-hidden">
+            <div class="grid grid-cols-3 gap-0" id="button-content">
+                <button class="tabButton bg-white" onclick="toggleTab(event)" id="1">
+                    History
+                </button>
+                <button class="tabButton bg-inactiveTab" onclick="toggleTab(event)" id="2">
+                    Vision
+                </button>
+                <button class="tabButton bg-inactiveTab" onclick="toggleTab(event)" id="3">
+                    Goals
+                </button>
+            </div>
+            <div class="" id="tab-content">
+                <div class="card" id="1">
+                    <p class="heading">History</p>
+                    I'm baby wolf pickled schlitz try-hard normcore marfa man bun mumblecore vice pop-up XOXO lomo kombucha glossier bicycle rights. Umami kinfolk salvia jean shorts offal venmo. Knausgaard tilde try-hard, woke fixie banjo man bun. Small batch tumeric mustache tbh wayfarers 8-bit shaman chartreuse tacos. Viral direct trade hoodie ugh chambray, craft beer pork belly flannel tacos single-origin coffee art party migas plaid pop-up.
+                </div>
+                <div class="card hidden" id="2">
+                    <p class="heading">Vision</p>
+                    Man bun PBR&B keytar copper mug prism, hell of helvetica. Synth crucifix offal deep v hella biodiesel. Church-key listicle polaroid put a bird on it chillwave palo santo enamel pin, tattooed meggings franzen la croix cray. Retro yr aesthetic four loko tbh helvetica air plant, neutra palo santo tofu mumblecore. Hoodie bushwick pour-over jean shorts chartreuse shabby chic. Roof party hammock master cleanse pop-up truffaut, bicycle rights skateboard affogato readymade sustainable deep v live-edge schlitz narwhal.
+                    <ul class="mt-4">
+                        <li class="">list item</li>
+                        <li class="">list item</li>
+                        <li class="">list item</li>
+                    </ul>
+                </div>
+                <div class="card hidden" id="3">
+                    <p class="heading">Goals</p>
+                    Chambray authentic truffaut, kickstarter brunch taxidermy vape heirloom four dollar toast raclette shoreditch church-key. Poutine etsy tote bag, cred fingerstache leggings cornhole everyday carry blog gastropub. Brunch biodiesel sartorial mlkshk swag, mixtape hashtag marfa readymade direct trade man braid cold-pressed roof party. Small batch adaptogen coloring book heirloom. Letterpress food truck hammock literally hell of wolf beard adaptogen everyday carry. Dreamcatcher pitchfork yuccie, banh mi salvia venmo photo booth quinoa chicharrones.
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

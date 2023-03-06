@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lorem Ipsum</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="bg-[#f1f5f8] p-4 md:px-16">
+    <div class="text-center mt-16 lg:max-w-screen-lg lg:mx-auto">
+        <h1 class="text-[#0e2c52] font-bold uppercase tracking-widest text-[1.3rem] lg:text-[2rem]">
+            tired of boring lorem ipsum?
+        </h1>
+        <div class="flex flex-row gap-3 mt-8 mb-8 justify-center items-center">
+            <span class="capitalize text-[#0e2c52] text-[1.3rem] lg:text-[1.5rem] tracking-[0.2rem]">
+                paragraphs:
+            </span>
+            <input type="number" class="w-16 h-8 rounded-lg pl-2" id="input-count">
+            <button class="bg-[#4f96e2] hover:bg-[#a6d1fa] rounded-lg tracking-widest uppercase text-[0.9rem] py-2 px-4" onclick="generateLoremIpsum()">
+                generate
+            </button>
+        </div>
+        <div class="text-[#6693d3] text-[0.9rem] lg:text-[1.1rem] mt-16" id="text-container"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

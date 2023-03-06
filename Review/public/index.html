@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reviews</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="bg-backgroundWhite h-screen flex flex-col justify-center" onload="renderReview()">
+    <div class="">
+        <div class="text-center font-roboto text-headingBlue font-bold text-3xl tracking-widest p-4">
+            Our Reviews
+        </div>
+        <div class="bg-accentBlue h-1 w-24 mx-auto"></div>
+    </div>
+    <div class="bg-white text-center w-80 sm:w-3/4 md:w-1/2 lg:w-1/3 mx-auto shadow-lg px-12 py-6 mt-16">
+        <div class="w-40 h-40 rounded-full mx-auto mb-8 bg-accentBlue">
+            <img src="" alt="Profile photo" class="w-40 h-40 rounded-full mx-auto relative top-2 right-2" id="image">
+        </div>
+        <div class="text-sm">
+            <p class="text-headingBlue capitalize font-roboto font-bold tracking-widest" id="name"></p>
+            <p class="text-accentBlue pt-1 pb-3 uppercase" id="designation"></p>
+            <p class="text-textBlue" id="review"></p>
+        </div>
+        <div class="my-1 sm:my-4" id="navigation">
+            <button class="" onclick="prevReview()">
+                <svg xmlns="http://www.w3.org/2000/svg" class="navigationButton" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" />
+                    </svg>
+            </button>
+            <button class="" onclick="nextReview()">
+                <svg xmlns="http://www.w3.org/2000/svg" class="navigationButton" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+                    </svg>
+            </button>
+        </div>
+        <button class="text-accentBlue text-sm p-2 bg-blue-50 outline outline-1 outline-accentBlue hover:text-headingBlue hover:bg-accentBlue hover:outline-headingBlue duration-500 rounded-sm" onclick="getRandomReview()">
+            Surpise Me
+        </button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
